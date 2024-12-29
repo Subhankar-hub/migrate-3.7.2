@@ -45,3 +45,12 @@ example/README filter=lfs diff=lfs merge=lfs -text
 example/testtime filter=lfs diff=lfs merge=lfs -text
 example/outfile-bayes-saved filter=lfs diff=lfs merge=lfs -text
 example/outfile-xabaaxabbaxaabax1 filter=lfs diff=lfs merge=lfs -text
+example filter=lfs diff=lfs merge=lfs -text
+graphics filter=lfs diff=lfs merge=lfs -text
+HISTORY filter=lfs diff=lfs merge=lfs -text
+migrate.html filter=lfs diff=lfs merge=lfs -text
+README_PARALLEL_GENERAL filter=lfs diff=lfs merge=lfs -text
+README_PARALLEL_WINDOWS filter=lfs diff=lfs merge=lfs -text
+contribution filter=lfs diff=lfs merge=lfs -text
+README filter=lfs diff=lfs merge=lfs -text
+src filter=lfs diff=lfs merge=lfs -text
