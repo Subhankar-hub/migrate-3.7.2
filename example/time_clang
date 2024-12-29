@@ -1,0 +1,9 @@
+clang -O4
+real	21m25.708s
+user	27m34.618s
+sys	1m25.062s
+
+gcc -O3 -fast [-04 crashes]
+real	20m23.820s
+user	30m45.440s
+sys	1m20.429s

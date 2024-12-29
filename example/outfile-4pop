@@ -1,0 +1,236 @@
+  =============================================
+  AUTO                                         
+  =============================================
+  MIGRATION RATE AND POPULATION SIZE ESTIMATION
+  using Markov Chain Monte Carlo simulation
+  =============================================
+  Version 3.7.0
+
+  Program started at Wed Apr  6 23:13:06 2016
+         finished at Wed Apr  6 23:18:28 2016
+     
+
+
+Options in use:
+---------------
+
+Analysis strategy is BAYESIAN INFERENCE
+
+Proposal distribution:
+Parameter group          Proposal type
+-----------------------  -------------------
+Population size (Theta)       Slice sampling
+Migration rate      (M)       Slice sampling
+
+
+Prior distribution (Proposal-delta will be tuned to acceptance frequence 0.440000):
+Parameter group          Prior type   Minimum    Mean(*)    Maximum    Delta
+-----------------------  ------------ ---------- ---------- ---------- ----------
+Population size (Theta)      Uniform  0.000000   0.050000   0.100000   0.010000 
+Migration rate      (M)      Uniform  0.000000  5000.00000 10000.0000 1000.00000
+
+
+
+Datatype: DNA sequence data
+
+Inheritance scalers in use for Thetas (specified scalars=1)
+1.00 1.00 
+[Each Theta uses the (true) ineritance scalar of the first locus as a reference]
+
+
+Pseudo-random number generator: Mersenne-Twister                                
+Random number seed (from parmfile)            310705631
+
+Start parameters:
+   First genealogy was started using a random tree
+   Theta values were generated  from an FST-calculation
+   M values were generated from the FST-calculation
+
+Migration model: Arbitrary migration matrix model            
+[Legend: m = average (average over a group of Thetas or M]
+[s = symmetric M, S = symmetric 4Nm,
+ 0 = zero, and not estimated,   ]
+[* = free to vary, Thetas are on diagonal]
+Romanshorn     m a b a 
+ Arbon___1     a m a b 
+Kreuzlinge     b a m a 
+Frauenfeld     a b a m 
+
+
+
+Mutation rate is constant for all loci
+
+Markov chain settings:
+   Long chains (long-chains):                              1
+      Steps sampled (inc*samples*rep):                100000
+      Steps recorded (sample*rep):                     10000
+   Combining over replicates:                              2
+   Static heating scheme
+      4 chains with  temperatures
+       1.00, 1.50, 3.00,1000000.00
+      Swapping interval is 1
+   Burn-in per replicate (samples*inc):                50000
+
+Print options:
+   Data file:                                    infile.4pop
+   Output file (ASCII text):                    outfile-4pop
+   Output file (PDF):                       outfile-4pop.pdf
+   Posterior distribution:                         bayesfile
+   Print data:                                            No
+   Print genealogies:                                     No
+   Plot data: No                                            
+
+Summary of data:
+Title:                                                 AUTO 
+Data file:                                       infile.4pop
+Datatype:                                      Sequence data
+Number of loci:                                            2
+
+Population                   Locus   Gene copies    
+----------------------------------------------------
+  1 Romanshorn___0               1        10
+  1                              2        10
+  2 Arbon___1                    1        10
+  2                              2        10
+  3 Kreuzlingen___2              1        10
+  3                              2        10
+  4 Frauenfeld___3               1        10
+  4                              2        10
+    Total of all populations     1        40
+                                 2        40
+
+
+Empirical Base Frequencies
+------------------------------------------------------------
+Locus     Nucleotide                        Transition/
+          ------------------------------  Transversion ratio
+          A       C       G       T(U)
+------------------------------------------------------------
+   1      0.2449  0.2384  0.2414  0.2752       2.00000
+   2      0.2736  0.2400  0.2341  0.2523       2.00000
+
+
+
+Bayesian estimates
+==================
+
+Locus Parameter        2.5%      25.0%    mode     75.0%   97.5%     median   mean
+-----------------------------------------------------------------------------------
+    1  Theta_1         0.00500  0.00700  0.00850  0.00980  0.01300  0.00890  0.00890
+    1  Theta_2         0.00500  0.00700  0.00850  0.00980  0.01300  0.00890  0.00890
+    1  Theta_3         0.00500  0.00700  0.00850  0.00980  0.01300  0.00890  0.00890
+    1  Theta_4         0.00500  0.00700  0.00850  0.00980  0.01300  0.00890  0.00890
+    1  M_2->1             0.00    60.00   150.00   220.00   320.00   190.00   152.54
+    1  M_3->1             0.00    60.00   150.00   220.00   340.00   190.00   156.30
+    1  M_4->1             0.00    60.00   150.00   220.00   320.00   190.00   152.54
+    1  M_1->2             0.00    60.00   150.00   220.00   320.00   190.00   152.54
+    1  M_3->2             0.00    60.00   150.00   220.00   320.00   190.00   152.54
+    1  M_4->2             0.00    60.00   150.00   220.00   340.00   190.00   156.30
+    1  M_1->3             0.00    60.00   150.00   220.00   340.00   190.00   156.30
+    1  M_2->3             0.00    60.00   150.00   220.00   320.00   190.00   152.54
+    1  M_4->3             0.00    60.00   150.00   220.00   320.00   190.00   152.54
+    1  M_1->4             0.00    60.00   150.00   220.00   320.00   190.00   152.54
+    1  M_2->4             0.00    60.00   150.00   220.00   340.00   190.00   156.30
+    1  M_3->4             0.00    60.00   150.00   220.00   320.00   190.00   152.54
+    2  Theta_1         0.01040  0.01340  0.01570  0.01800  0.02340  0.01650  0.01673
+    2  Theta_2         0.01040  0.01340  0.01570  0.01800  0.02340  0.01650  0.01673
+    2  Theta_3         0.01040  0.01340  0.01570  0.01800  0.02340  0.01650  0.01673
+    2  Theta_4         0.01040  0.01340  0.01570  0.01800  0.02340  0.01650  0.01673
+    2  M_2->1             0.00    60.00   150.00   220.00   320.00   170.00   142.88
+    2  M_3->1             0.00    20.00   150.00   220.00   400.00   190.00   162.97
+    2  M_4->1             0.00    60.00   150.00   220.00   320.00   170.00   142.88
+    2  M_1->2             0.00    60.00   150.00   220.00   320.00   170.00   142.88
+    2  M_3->2             0.00    60.00   150.00   220.00   320.00   170.00   142.88
+    2  M_4->2             0.00    20.00   150.00   220.00   400.00   190.00   162.97
+    2  M_1->3             0.00    20.00   150.00   220.00   400.00   190.00   162.97
+    2  M_2->3             0.00    60.00   150.00   220.00   320.00   170.00   142.88
+    2  M_4->3             0.00    60.00   150.00   220.00   320.00   170.00   142.88
+    2  M_1->4             0.00    60.00   150.00   220.00   320.00   170.00   142.88
+    2  M_2->4             0.00    20.00   150.00   220.00   400.00   190.00   162.97
+    2  M_3->4             0.00    60.00   150.00   220.00   320.00   170.00   142.88
+  All  Theta_1         0.00460  0.01000  0.01190  0.01360  0.01620  0.01190  0.01146
+  All  Theta_2         0.00460  0.01000  0.01190  0.01360  0.01620  0.01190  0.01146
+  All  Theta_3         0.00460  0.01000  0.01190  0.01360  0.01620  0.01190  0.01146
+  All  Theta_4         0.00460  0.01000  0.01190  0.01360  0.01620  0.01190  0.01146
+  All  M_2->1             0.00    60.00   150.00   240.00   360.00   190.00   154.74
+  All  M_3->1             0.00    60.00   170.00   240.00   380.00   190.00   161.54
+  All  M_4->1             0.00    60.00   150.00   240.00   360.00   190.00   154.74
+  All  M_1->2             0.00    60.00   150.00   240.00   360.00   190.00   154.74
+  All  M_3->2             0.00    60.00   150.00   240.00   360.00   190.00   154.74
+  All  M_4->2             0.00    60.00   170.00   240.00   380.00   190.00   161.54
+  All  M_1->3             0.00    60.00   170.00   240.00   380.00   190.00   161.54
+  All  M_2->3             0.00    60.00   150.00   240.00   360.00   190.00   154.74
+  All  M_4->3             0.00    60.00   150.00   240.00   360.00   190.00   154.74
+  All  M_1->4             0.00    60.00   150.00   240.00   360.00   190.00   154.74
+  All  M_2->4             0.00    60.00   170.00   240.00   380.00   190.00   161.54
+  All  M_3->4             0.00    60.00   150.00   240.00   360.00   190.00   154.74
+-----------------------------------------------------------------------------------
+
+
+
+Log-Probability of the data given the model (marginal likelihood = log(P(D|thisModel))
+--------------------------------------------------------------------
+[Use this value for Bayes factor calculations:
+BF = Exp[log(P(D|thisModel) - log(P(D|otherModel)]
+shows the support for thisModel]
+
+
+
+Locus      Raw Thermodynamic score(1a)  Bezier approximated score(1b)     Harmonic mean(2)
+------------------------------------------------------------------------------------------
+      1              -3236.57                      -2551.03               -2440.64
+      2              -3648.64                      -2831.27               -2692.21
+---------------------------------------------------------------------------------------
+  All                -6844.65                      -5341.74               -5092.29
+[Scaling factor = 40.562384]
+MCMC run characteristics
+========================
+
+
+
+
+Acceptance ratios for all parameters and the genealogies
+---------------------------------------------------------------------
+
+Parameter           Accepted changes               Ratio
+Theta_1                   6300/6300              1.00000
+Theta_2                   6285/6285              1.00000
+Theta_3                   6370/6370              1.00000
+Theta_4                   6166/6166              1.00000
+M_2->1                    6247/6247              1.00000
+M_3->1                    6239/6239              1.00000
+M_4->1                    6262/6262              1.00000
+M_1->2                    6108/6108              1.00000
+M_3->2                    6214/6214              1.00000
+M_4->2                    6210/6210              1.00000
+M_1->3                    6208/6208              1.00000
+M_2->3                    6207/6207              1.00000
+M_4->3                    6348/6348              1.00000
+M_1->4                    6306/6306              1.00000
+M_2->4                    6359/6359              1.00000
+M_3->4                    6230/6230              1.00000
+Genealogies               5754/99941             0.05757
+Autocorrelation and Effective sample size
+-------------------------------------------------------------------
+
+  Parameter         Autocorrelation(*)   Effective Sample size
+  ---------         ---------------      ---------------------
+  Theta_1=1 [m]       0.84394           1692.50
+  Theta_2=1 [m]       0.84394           1692.50
+  Theta_3=1 [m]       0.84394           1692.50
+  Theta_4=1 [m]       0.84394           1692.50
+  M_(2,1) [a]              0.50812              6585.48
+  M_(3,1) [b]              0.64221              4457.40
+  M_(4,1) [a]              0.50812              6585.48
+  M_(1,2) [a]              0.50812              6585.48
+  M_(3,2) [a]              0.50812              6585.48
+  M_(4,2) [b]              0.64221              4457.40
+  M_(1,3) [b]              0.64221              4457.40
+  M_(2,3) [a]              0.50812              6585.48
+  M_(4,3) [a]              0.50812              6585.48
+  M_(1,4) [a]              0.50812              6585.48
+  M_(2,4) [b]              0.64221              4457.40
+  M_(3,4) [a]              0.50812              6585.48
+  Ln[Prob(D|P)]          0.85991              1508.57
+  (*) averaged over loci.
+

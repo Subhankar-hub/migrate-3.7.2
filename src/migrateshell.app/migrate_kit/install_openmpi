@@ -1,0 +1,58 @@
+#!/bin/bash
+# installs openmpi and sets the path in in bash_profile 
+# old fast migrate section will be deleted!
+# revised November 2012 (earlier version did not remove duplicates
+#
+dir=`which fastmigrate-n | sed 's/fastmigrate-n//'`;
+if [ -d "/usr/local/openmpi-1.8/bin" ]; then
+   echo "openmpi 1.8 is already installed"
+   if [ ! "$FASTMIGRATE" == "installed" ]; then
+       touch ~/.bash_profile
+       sed -i.bak '/fastmigrate-n\ addition\ begin/,/fastmigrate-n\ addition\ end/d' ~/.bash_profile
+       cat >> ~/.bash_profile << end-of-insert
+#### fastmigrate-n addition begin ####
+export FASTMIGRATE="installed"
+export PATH=.:/usr/local/openmpi-1.8/bin:$PATH
+if [ -d "$LD_LIBRARY_PATH" ]; then
+    export LD_LIBRARY_PATH=/usr/local/openmpi-1.8/lib
+else
+    export LD_LIBRARY_PATH=/usr/local/openmpi-1.8/lib:$LD_LIBRARY_PATH
+fi
+#### fastmigrate-n addition end   ####                                                                                                                 
+end-of-insert
+   fi
+   exit;
+fi
+echo "You are about to install a binary version of openmpi 1.8 onto your computer"
+echo "This will need administrator rights and you will need to give the admin password"
+echo ""
+echo "On systems prior to 10.7 (Lion), you may have an older openmpi version installed"
+echo "fastmigrate-n needs a newer version that is located at /usr/local/openmpi-1.8"
+echo ""
+echo "If you proceed the installer will unpack the openmpi-1.8.tar.gz into the"
+echo "directory openmpi-1.8 and then it will be moved into /usr/local"
+echo "the migrateshell.app and the fastmigrate-n will search for the openmpi library"
+echo "at /usr/local/openmpi-1.8 and will not function correctly if openmpi is installed"
+echo "in a different location"
+# go to your home directory
+cd
+# unpack the openmpi package
+tar xf $dir/openmpi-1.8.tar.bz2
+if [ ! -d "/usr/local" ]; then
+   sudo mkdir -p /usr/local
+fi
+sudo mv openmpi-1.8 /usr/local/
+#rm openmpi_migrate-1.8.tar.gz
+cat >> ~/.bash_profile << end-of-insert
+#### fastmigrate-n addition begin ####
+export FASTMIGRATE="installed"
+export PATH=.:/usr/local/openmpi-1.8/bin:$PATH
+if [ -d "$LD_LIBRARY_PATH" ]; then
+    export LD_LIBRARY_PATH=/usr/local/openmpi-1.8/lib
+else
+    export LD_LIBRARY_PATH=/usr/local/openmpi-1.8/lib:$LD_LIBRARY_PATH
+fi
+#### fastmigrate-n addition end   ####                                                                                                                 
+end-of-insert
+echo "installation finished, try to run fastmigrate-n"
+exit

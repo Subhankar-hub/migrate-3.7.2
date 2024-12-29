@@ -1,0 +1,16 @@
+#!/bin/bash
+# this script assumes that the openmpi
+# is available on the machine in a standard place
+cores=`findcores`;
+echo "$cores compute nodes and one director node"
+let cores=$cores+1;
+dir=`which fastmigrate-n | sed 's/fastmigrate-n//'`;
+echo "$dir.hostfile";
+mpi=`which mpirun`
+if [ "$mpi" == "" ]; then
+    echo "I cannot find an openmpi installation, use the command install_openmpi"
+else
+    echo "$mpi";
+    export PATH=$dir:/Applications/migrateshell.app/migrate_kit:$PATH
+    mpirun -v -x PATH -np $cores --hostfile $dir/hostfile migrate-n-mpi $1 $2
+fi

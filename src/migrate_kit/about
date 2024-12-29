@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Compilation of migrate:"
+cores = `findcores`;
+echo "migrate-n          uses kernel threads (Grandcentral Dispatch) "
+echo "                   for heated chains [faster than make thread!!]"
+echo "fastmigrate-n      uses kernel threads for heating (Grandcentral Dispatch)"
+echo "                   and runs data parallel using MPI supplied by openmpi 1.8"
+echo "                   fastmigrate-n finds the number of available cores and runs"
+echo "                   migrate-n-mpi on all of them. If you have multiple loci or"
+echo "                   want to run multiple replicates, use this, it will run up to"
+echo "                   $cores times faster"

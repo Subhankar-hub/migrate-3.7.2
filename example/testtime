@@ -1,0 +1,8 @@
+mpi+paralio using 8 nodes
+real	0m35.829s
+user	0m48.005s
+sys	0m6.745s
+using mpi
+real  0m35.905s
+user  0m48.342s
+sys   0m5.921s

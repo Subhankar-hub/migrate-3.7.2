@@ -1,0 +1,961 @@
+Reading parmfile "parmfile.testbayes"....
+  =============================================
+  MIGRATION RATE AND POPULATION SIZE ESTIMATION
+  using Markov Chain Monte Carlo simulation
+  =============================================
+  PDF output enabled [Letter-size]
+  Version 3.7.0   [April-06-16]
+  Program started at   Fri Jun 24 09:29:10 2016
+
+
+
+
+Reading (0) population_number___0 ...
+Reading (1) population_number___1 ...
+
+
+0> bayes map
+0> 0 map[0]=0 map[1]=0 *
+0> 1 map[0]=1 map[1]=1 *
+0> 2 map[0]=2 map[1]=-999 0
+0> 3 map[0]=3 map[1]=3 *
+0> bayes map
+0> 0 map[0]=0 map[1]=0 *
+0> 1 map[0]=1 map[1]=1 *
+0> 2 map[0]=2 map[1]=-999 0
+0> 3 map[0]=3 map[1]=3 *
+0> bayes map
+0> 0 map[0]=0 map[1]=0 *
+0> 1 map[0]=1 map[1]=1 *
+0> 2 map[0]=2 map[1]=-999 0
+0> 3 map[0]=3 map[1]=3 *
+0> bayes map
+0> 0 map[0]=0 map[1]=0 *
+0> 1 map[0]=1 map[1]=1 *
+0> 2 map[0]=2 map[1]=-999 0
+0> 3 map[0]=3 map[1]=3 *
+Options in use:
+---------------
+
+Analysis strategy is BAYESIAN INFERENCE
+
+Proposal distribution:
+Parameter group          Proposal type
+-----------------------  -------------------
+Population size (Theta)       Slice sampling
+Migration rate      (M)       Slice sampling
+
+
+Prior distribution (Proposal-delta will be tuned to acceptance frequence 0.440000):
+Parameter group          Prior type   Minimum    Mean(*)    Maximum    Delta
+-----------------------  ------------ ---------- ---------- ---------- ----------
+Population size (Theta)      Uniform  0.000000  10.000000  20.000000   2.000000 
+Migration rate      (M)      Uniform  0.000000  10.000000  20.000000   2.000000 
+
+
+
+Datatype: Microsatellite data [Brownian motion]
+Missing data is not included
+
+Inheritance scalers in use for Thetas (specified scalars=1)
+1.00 1.00 1.00 1.00 1.00 
+1.00 1.00 1.00 1.00 1.00 
+
+[Each Theta uses the (true) ineritance scalar of the first locus as a reference]
+
+
+Pseudo-random number generator: Mersenne-Twister                                
+Random number seed (from parmfile)            310705631
+
+Start parameters:
+   First genealogy was started using a UPGMA-tree
+   Theta values were generated  from an FST-calculation
+   M values were generated from the FST-calculation
+
+Migration model: Arbitrary migration matrix model            
+[Legend: m = average (average over a group of Thetas or M]
+[s = symmetric M, S = symmetric 4Nm,
+ 0 = zero, and not estimated,   ]
+[* = free to vary, Thetas are on diagonal]
+population     * 0 
+population     * * 
+
+
+
+Mutation rate is constant for all loci
+
+Markov chain settings:
+   Long chains (long-chains):                              1
+      Steps sampled (inc*samples*rep):                200000
+      Steps recorded (sample*rep):                     20000
+   Combining over replicates:                              2
+   Static heating scheme
+      4 chains with  temperatures
+       1.00, 1.50, 3.00,1000000.00
+      Swapping interval is 1
+   Burn-in per replicate (samples*inc):               100000
+
+Print options:
+   Data file:                                    infile.msat
+   Output file (ASCII text):                   outfile-bayes
+   Output file (PDF):                      outfile-bayes.pdf
+   Posterior distribution:                         bayesfile
+   Print data:                                            No
+   Print genealogies:                                     No
+   Plot data: No                                            
+
+Summary of data:
+Title:                      Example: Microsatellite data set
+Data file:                                       infile.msat
+Datatype:                                Microsatellite data
+[Data was used as repeat-length information]
+Number of loci:                                           10
+
+Population                   Locus   Gene copies    
+                                     ---------------
+                                     data  (missing)
+----------------------------------------------------
+  1 population_number___0        1     50 (0)
+  1                              2     50 (0)
+  1                              3     50 (0)
+  1                              4     50 (0)
+  1                              5     50 (0)
+  1                              6     50 (0)
+  1                              7     50 (0)
+  1                              8     50 (0)
+  1                              9     50 (0)
+  1                             10     50 (0)
+  2 population_number___1        1     42 (0)
+  2                              2     42 (0)
+  2                              3     42 (0)
+  2                              4     42 (0)
+  2                              5     42 (0)
+  2                              6     42 (0)
+  2                              7     42 (0)
+  2                              8     42 (0)
+  2                              9     42 (0)
+  2                             10     42 (0)
+    Total of all populations     1     92 (0)
+                                 2     92 (0)
+                                 3     92 (0)
+                                 4     92 (0)
+                                 5     92 (0)
+                                 6     92 (0)
+                                 7     92 (0)
+                                 8     92 (0)
+                                 9     92 (0)
+                                10     92 (0)
+
+09:29:10   Locus 1: Replicate 1
+09:29:10   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:29:11   Burn-in 33.0% complete
+09:29:11   Burn-in 66.0% complete
+09:29:12   Burn-in 99.0% complete
+09:29:12   Sampling ...
+
+09:29:19   [NODE:0, Locus: 1, Heating:ON (Swaps: 30)] 
+           (prognosed end of run is 09:39 June 24 2016 [0.015151 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      14.42646   20.00000    0.852   266.45
+           Theta_2           1.000      10.22902   20.00000    0.831   307.38
+           M_1->2            1.000       0.70757   20.00000    0.824   321.50
+           Genealogies       1.000     -88.35489     ---       0.995     8.10
+
+09:29:21   [NODE:0, Locus: 1, Heating:ON (Swaps: 56)] 
+           (prognosed end of run is 09:35 June 24 2016 [0.030303 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      19.00089   20.00000    0.793   770.19
+           Theta_2           1.000      15.22993   20.00000    0.790   779.92
+           M_1->2            1.000       1.50525   20.00000    0.826   633.24
+           Genealogies       1.000     -93.39081     ---       0.994    21.66
+
+09:29:24   [NODE:0, Locus: 1, Heating:ON (Swaps: 110)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.045454 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      11.44759   20.00000    0.787  1193.41
+           Theta_2           1.000      14.89685   20.00000    0.766  1323.17
+           M_1->2            1.000       0.45039   20.00000    0.806  1074.85
+           Genealogies       1.000    -100.52920     ---       0.993    35.56
+09:29:24   4 chains: Temp(1,1.5,3,1e+06) Acc(0.22,0.32,0.44,1.00) Swap(110,73,0,0)
+09:29:24   Locus 1: Replicate 2
+09:29:24   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:29:24   Burn-in 33.0% complete
+09:29:24   Burn-in 66.0% complete
+09:29:25   Burn-in 99.0% complete
+09:29:25   Sampling ...
+
+09:29:32   [NODE:0, Locus: 1, Heating:ON (Swaps: 0)] 
+           (prognosed end of run is 09:35 June 24 2016 [0.060605 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      12.31150   20.00000    0.744   490.13
+           Theta_2           1.000       8.51937   20.00000    0.654   697.55
+           M_1->2            1.000       2.23134   20.00000    0.855   260.38
+           Genealogies       1.000     -89.25222     ---       0.986    23.55
+
+09:29:34   [NODE:0, Locus: 1, Heating:ON (Swaps: 18)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.075757 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      19.60280   20.00000    0.787   795.06
+           Theta_2           1.000      19.95753   20.00000    0.815   678.04
+           M_1->2            1.000       2.79036   20.00000    0.896   363.97
+           Genealogies       1.000    -109.72455     ---       0.992    25.39
+
+09:29:36   [NODE:0, Locus: 1, Heating:ON (Swaps: 165)] 
+           (prognosed end of run is 09:33 June 24 2016 [0.090908 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      16.79631   20.00000    0.748  1443.08
+           Theta_2           1.000      10.72153   20.00000    0.870   694.16
+           M_1->2            1.000       1.64059   20.00000    0.914   448.53
+           Genealogies       1.000     -92.02400     ---       0.994    31.14
+09:29:36   4 chains: Temp(1,1.5,3,1e+06) Acc(0.21,0.32,0.45,1.00) Swap(165,102,0,0)
+09:29:36   Locus 2: Replicate 1
+09:29:36   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:29:37   Burn-in 33.0% complete
+09:29:37   Burn-in 66.0% complete
+09:29:38   Burn-in 99.0% complete
+09:29:38   Sampling ...
+
+09:29:46   [NODE:0, Locus: 2, Heating:ON (Swaps: 6)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.106060 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      10.02938   20.00000    0.879   214.01
+           Theta_2           1.000       9.11108   20.00000    0.778   414.98
+           M_1->2            1.000      19.70524   20.00000    0.668   662.10
+           Genealogies       1.000     -51.46432     ---       0.990    16.50
+
+09:29:48   [NODE:0, Locus: 2, Heating:ON (Swaps: 20)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.121211 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       9.27829   20.00000    0.884   410.16
+           Theta_2           1.000      17.78592   20.00000    0.735  1017.79
+           M_1->2            1.000      15.39194   20.00000    0.753   938.56
+           Genealogies       1.000     -50.61940     ---       0.992    27.38
+
+09:29:51   [NODE:0, Locus: 2, Heating:ON (Swaps: 26)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.136362 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       7.91435   20.00000    0.896   546.57
+           Theta_2           1.000      10.33443   20.00000    0.728  1577.03
+           M_1->2            1.000       5.22581   20.00000    0.876   661.85
+           Genealogies       1.000     -58.31013     ---       0.993    37.45
+09:29:51   4 chains: Temp(1,1.5,3,1e+06) Acc(0.38,0.51,0.66,1.00) Swap(26,43,0,0)
+09:29:51   Locus 2: Replicate 2
+09:29:51   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:29:51   Burn-in 33.0% complete
+09:29:52   Burn-in 66.0% complete
+09:29:52   Burn-in 99.0% complete
+09:29:52   Sampling ...
+
+09:30:01   [NODE:0, Locus: 2, Heating:ON (Swaps: 0)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.151514 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       7.09216   20.00000    0.828   313.90
+           Theta_2           1.000      15.20978   20.00000    0.786   398.79
+           M_1->2            1.000      12.49366   20.00000    0.803   363.81
+           Genealogies       1.000     -55.49760     ---       0.989    19.18
+
+09:30:03   [NODE:0, Locus: 2, Heating:ON (Swaps: 0)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.166665 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       7.19021   20.00000    0.822   652.52
+           Theta_2           1.000       7.75418   20.00000    0.754   933.74
+           M_1->2            1.000      14.39389   20.00000    0.832   612.10
+           Genealogies       1.000     -47.18699     ---       0.993    24.14
+
+09:30:06   [NODE:0, Locus: 2, Heating:ON (Swaps: 261)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.181816 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       5.50453   20.00000    0.918   425.87
+           Theta_2           1.000       6.17761   20.00000    0.742  1481.74
+           M_1->2            1.000       9.33712   20.00000    0.937   323.00
+           Genealogies       1.000     -45.43047     ---       0.997    15.63
+09:30:06   4 chains: Temp(1,1.5,3,1e+06) Acc(0.37,0.51,0.64,1.00) Swap(261,262,0,0)
+09:30:06   Locus 3: Replicate 1
+09:30:06   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:30:06   Burn-in 33.0% complete
+09:30:07   Burn-in 66.0% complete
+09:30:07   Burn-in 99.0% complete
+09:30:07   Sampling ...
+
+09:30:16   [NODE:0, Locus: 3, Heating:ON (Swaps: 0)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.196968 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       5.85550   20.00000    0.853   265.15
+           Theta_2           1.000       2.02096   20.00000    0.768   438.11
+           M_1->2            1.000       6.09416   20.00000    0.775   422.98
+           Genealogies       1.000     -52.45132     ---       0.990    17.54
+
+09:30:18   [NODE:0, Locus: 3, Heating:ON (Swaps: 0)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.212119 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      12.43595   20.00000    0.880   425.33
+           Theta_2           1.000       2.60308   20.00000    0.815   680.32
+           M_1->2            1.000       2.11764   20.00000    0.914   297.83
+           Genealogies       1.000     -53.18082     ---       0.991    29.19
+
+09:30:21   [NODE:0, Locus: 3, Heating:ON (Swaps: 4)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.227270 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       7.96350   20.00000    0.893   564.11
+           Theta_2           1.000       4.08484   20.00000    0.856   776.70
+           M_1->2            1.000       2.41124   20.00000    0.906   491.79
+           Genealogies       1.000     -59.70041     ---       0.992    42.15
+09:30:21   4 chains: Temp(1,1.5,3,1e+06) Acc(0.37,0.54,0.70,1.00) Swap(4,172,0,0)
+09:30:21   Locus 3: Replicate 2
+09:30:21   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:30:21   Burn-in 33.0% complete
+09:30:22   Burn-in 66.0% complete
+09:30:22   Burn-in 99.0% complete
+09:30:22   Sampling ...
+
+09:30:31   [NODE:0, Locus: 3, Heating:ON (Swaps: 93)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.242422 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       5.04068   20.00000    0.885   203.55
+           Theta_2           1.000      13.67192   20.00000    0.691   608.67
+           M_1->2            1.000       5.62036   20.00000    0.910   156.22
+           Genealogies       1.000     -49.86146     ---       0.987    22.61
+
+09:30:33   [NODE:0, Locus: 3, Heating:ON (Swaps: 93)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.257573 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       6.46727   20.00000    0.920   276.72
+           Theta_2           1.000      15.40996   20.00000    0.673  1303.33
+           M_1->2            1.000      13.45870   20.00000    0.933   230.53
+           Genealogies       1.000     -59.15834     ---       0.994    18.73
+
+09:30:36   [NODE:0, Locus: 3, Heating:ON (Swaps: 93)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.272725 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      19.17014   20.00000    0.901   521.28
+           Theta_2           1.000       8.48120   20.00000    0.745  1463.14
+           M_1->2            1.000      12.74546   20.00000    0.925   388.65
+           Genealogies       1.000     -87.56410     ---       0.994    31.17
+09:30:36   4 chains: Temp(1,1.5,3,1e+06) Acc(0.37,0.56,0.70,1.00) Swap(93,229,0,0)
+09:30:36   Locus 4: Replicate 1
+09:30:36   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:30:36   Burn-in 33.0% complete
+09:30:37   Burn-in 66.0% complete
+09:30:37   Burn-in 99.0% complete
+09:30:37   Sampling ...
+
+09:30:44   [NODE:0, Locus: 4, Heating:ON (Swaps: 46)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.287876 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      14.94647   20.00000    0.563   931.64
+           Theta_2           1.000      11.35681   20.00000    0.414  1379.20
+           M_1->2            1.000      11.24964   20.00000    0.546   978.07
+           Genealogies       1.000     -87.44732     ---       0.980    33.58
+
+09:30:47   [NODE:0, Locus: 4, Heating:ON (Swaps: 48)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.303027 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      17.97596   20.00000    0.612  1605.08
+           Theta_2           1.000       9.04170   20.00000    0.448  2543.57
+           M_1->2            1.000      19.74693   20.00000    0.669  1322.82
+           Genealogies       1.000     -94.88949     ---       0.983    57.49
+
+09:30:49   [NODE:0, Locus: 4, Heating:ON (Swaps: 52)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.318179 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      19.86671   20.00000    0.629  2274.58
+           Theta_2           1.000       4.57220   20.00000    0.581  2653.15
+           M_1->2            1.000      17.59488   20.00000    0.670  1976.32
+           Genealogies       1.000    -102.11605     ---       0.987    67.10
+09:30:49   4 chains: Temp(1,1.5,3,1e+06) Acc(0.17,0.24,0.35,1.00) Swap(52,12,0,0)
+09:30:49   Locus 4: Replicate 2
+09:30:49   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:30:49   Burn-in 33.0% complete
+09:30:50   Burn-in 66.0% complete
+09:30:50   Burn-in 99.0% complete
+09:30:50   Sampling ...
+
+09:30:58   [NODE:0, Locus: 4, Heating:ON (Swaps: 176)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.333330 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      19.42071   20.00000    0.644   720.18
+           Theta_2           1.000       6.25944   20.00000    0.452  1257.97
+           M_1->2            1.000      12.31058   20.00000    0.561   936.61
+           Genealogies       1.000    -102.96325     ---       0.972    46.65
+
+09:31:00   [NODE:0, Locus: 4, Heating:ON (Swaps: 280)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.348481 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      17.68932   20.00000    0.633  1495.84
+           Theta_2           1.000       5.13692   20.00000    0.551  1928.71
+           M_1->2            1.000      15.47658   20.00000    0.695  1199.41
+           Genealogies       1.000     -80.00353     ---       0.981    62.25
+
+09:31:02   [NODE:0, Locus: 4, Heating:ON (Swaps: 630)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.363633 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      19.03668   20.00000    0.635  2233.89
+           Theta_2           1.000      18.15550   20.00000    0.523  3128.61
+           M_1->2            1.000      17.90158   20.00000    0.695  1798.08
+           Genealogies       1.000     -88.66965     ---       0.983    84.73
+09:31:02   4 chains: Temp(1,1.5,3,1e+06) Acc(0.17,0.22,0.37,1.00) Swap(630,0,0,0)
+09:31:02   Locus 5: Replicate 1
+09:31:02   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:31:03   Burn-in 33.0% complete
+09:31:03   Burn-in 66.0% complete
+09:31:04   Burn-in 99.0% complete
+09:31:04   Sampling ...
+
+09:31:13   [NODE:0, Locus: 5, Heating:ON (Swaps: 0)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.378784 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       1.27099   20.00000    0.908   161.12
+           Theta_2           1.000      14.21069   20.00000    0.659   684.76
+           M_1->2            1.000       9.79705   20.00000    0.837   295.94
+           Genealogies       1.000     -24.99209     ---       0.988    20.43
+
+09:31:16   [NODE:0, Locus: 5, Heating:ON (Swaps: 28)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.393935 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       5.64582   20.00000    0.960   134.60
+           Theta_2           1.000       7.40687   20.00000    0.680  1267.68
+           M_1->2            1.000      14.59211   20.00000    0.811   697.47
+           Genealogies       1.000     -45.03223     ---       0.991    29.85
+
+09:31:19   [NODE:0, Locus: 5, Heating:ON (Swaps: 138)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.409087 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       3.04733   20.00000    0.958   212.95
+           Theta_2           1.000       5.43144   20.00000    0.700  1762.09
+           M_1->2            1.000      13.94417   20.00000    0.806  1072.25
+           Genealogies       1.000     -27.87902     ---       0.992    40.63
+09:31:19   4 chains: Temp(1,1.5,3,1e+06) Acc(0.43,0.60,0.78,1.00) Swap(138,235,0,0)
+09:31:19   Locus 5: Replicate 2
+09:31:19   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:31:19   Burn-in 33.0% complete
+09:31:20   Burn-in 66.0% complete
+09:31:20   Burn-in 99.0% complete
+09:31:20   Sampling ...
+
+09:31:29   [NODE:0, Locus: 5, Heating:ON (Swaps: 0)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.424238 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       2.80771   20.00000    0.799   371.84
+           Theta_2           1.000       8.27298   20.00000    0.752   471.59
+           M_1->2            1.000      15.51391   20.00000    0.443  1285.91
+           Genealogies       1.000     -27.14026     ---       0.989    18.93
+
+09:31:32   [NODE:0, Locus: 5, Heating:ON (Swaps: 0)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.439390 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       2.21707   20.00000    0.853   529.70
+           Theta_2           1.000       1.12082   20.00000    0.786   796.64
+           M_1->2            1.000      17.90186   20.00000    0.675  1292.91
+           Genealogies       1.000     -13.93824     ---       0.989    35.48
+
+09:31:35   [NODE:0, Locus: 5, Heating:ON (Swaps: 0)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.454541 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       2.58680   20.00000    0.847   827.12
+           Theta_2           1.000       2.50616   20.00000    0.798  1122.17
+           M_1->2            1.000      15.27402   20.00000    0.656  2073.06
+           Genealogies       1.000     -20.88206     ---       0.990    49.08
+09:31:35   4 chains: Temp(1,1.5,3,1e+06) Acc(0.43,0.62,0.77,0.99) Swap(0,646,0,0)
+09:31:35   Locus 6: Replicate 1
+09:31:35   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:31:36   Burn-in 33.0% complete
+09:31:36   Burn-in 66.0% complete
+09:31:37   Burn-in 99.0% complete
+09:31:37   Sampling ...
+
+09:31:45   [NODE:0, Locus: 6, Heating:ON (Swaps: 16)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.469692 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      13.09240   20.00000    0.922   135.98
+           Theta_2           1.000       0.55634   20.00000    0.795   381.07
+           M_1->2            1.000      12.56157   20.00000    0.745   485.82
+           Genealogies       1.000     -50.33561     ---       0.997     4.68
+
+09:31:47   [NODE:0, Locus: 6, Heating:ON (Swaps: 16)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.484844 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       7.64111   20.00000    0.943   194.76
+           Theta_2           1.000       0.69269   20.00000    0.832   609.32
+           M_1->2            1.000       3.94361   20.00000    0.699  1182.66
+           Genealogies       1.000     -47.97671     ---       0.998     6.79
+
+09:31:50   [NODE:0, Locus: 6, Heating:ON (Swaps: 16)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.499995 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       3.85906   20.00000    0.944   288.59
+           Theta_2           1.000       0.78101   20.00000    0.837   885.87
+           M_1->2            1.000       8.60153   20.00000    0.717  1647.95
+           Genealogies       1.000     -41.51031     ---       0.998    11.74
+09:31:50   4 chains: Temp(1,1.5,3,1e+06) Acc(0.25,0.35,0.51,1.00) Swap(16,10,0,0)
+09:31:50   Locus 6: Replicate 2
+09:31:50   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:31:50   Burn-in 33.0% complete
+09:31:50   Burn-in 66.0% complete
+09:31:51   Burn-in 99.0% complete
+09:31:51   Sampling ...
+
+09:31:59   [NODE:0, Locus: 6, Heating:ON (Swaps: 0)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.515146 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       6.80595   20.00000    0.821   326.71
+           Theta_2           1.000       0.68304   20.00000    0.831   307.39
+           M_1->2            1.000      15.16270   20.00000    0.856   257.83
+           Genealogies       1.000     -43.11927     ---       0.990    17.46
+
+09:32:01   [NODE:0, Locus: 6, Heating:ON (Swaps: 18)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.530298 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       8.80628   20.00000    0.904   335.98
+           Theta_2           1.000       1.77762   20.00000    0.819   663.33
+           M_1->2            1.000      13.40256   20.00000    0.861   496.40
+           Genealogies       1.000     -55.53796     ---       0.996    13.80
+
+09:32:03   [NODE:0, Locus: 6, Heating:ON (Swaps: 18)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.545449 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      10.47601   20.00000    0.926   386.64
+           Theta_2           1.000       2.86882   20.00000    0.848   825.02
+           M_1->2            1.000       1.99086   20.00000    0.907   484.99
+           Genealogies       1.000     -59.76207     ---       0.996    21.80
+09:32:03   4 chains: Temp(1,1.5,3,1e+06) Acc(0.26,0.36,0.51,0.99) Swap(18,2,0,0)
+09:32:03   Locus 7: Replicate 1
+09:32:03   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:32:04   Burn-in 33.0% complete
+09:32:04   Burn-in 66.0% complete
+09:32:05   Burn-in 99.0% complete
+09:32:05   Sampling ...
+
+09:32:13   [NODE:0, Locus: 7, Heating:ON (Swaps: 571)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.560600 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       0.22768   20.00000    0.800   369.30
+           Theta_2           1.000      10.75697   20.00000    0.776   419.87
+           M_1->2            1.000       0.25188   20.00000    0.625   768.62
+           Genealogies       1.000     -42.94598     ---       0.962    64.86
+
+09:32:15   [NODE:0, Locus: 7, Heating:ON (Swaps: 647)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.575752 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       1.63156   20.00000    0.935   224.52
+           Theta_2           1.000      17.04661   20.00000    0.809   703.24
+           M_1->2            1.000       1.41177   20.00000    0.854   525.55
+           Genealogies       1.000     -55.56043     ---       0.978    74.57
+
+09:32:18   [NODE:0, Locus: 7, Heating:ON (Swaps: 649)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.590903 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       0.95207   20.00000    0.932   352.87
+           Theta_2           1.000       7.83679   20.00000    0.823   970.74
+           M_1->2            1.000       1.60463   20.00000    0.842   856.97
+           Genealogies       1.000     -29.87055     ---       0.989    57.28
+09:32:18   4 chains: Temp(1,1.5,3,1e+06) Acc(0.46,0.54,0.65,0.99) Swap(649,154,0,0)
+09:32:18   Locus 7: Replicate 2
+09:32:18   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:32:18   Burn-in 33.0% complete
+09:32:19   Burn-in 66.0% complete
+09:32:19   Burn-in 99.0% complete
+09:32:19   Sampling ...
+
+09:32:28   [NODE:0, Locus: 7, Heating:ON (Swaps: 14)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.606055 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       0.00741   20.00000    0.497  1118.32
+           Theta_2           1.000      11.05144   20.00000    0.903   169.29
+           M_1->2            1.000       1.03045   20.00000    0.740   496.83
+           Genealogies       1.000     -30.97582     ---       0.993    11.53
+
+09:32:30   [NODE:0, Locus: 7, Heating:ON (Swaps: 190)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.621206 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       2.05886   20.00000    0.854   523.06
+           Theta_2           1.000       4.83308   20.00000    0.889   393.45
+           M_1->2            1.000       0.68756   20.00000    0.841   575.38
+           Genealogies       1.000     -40.48858     ---       0.994    21.41
+
+09:32:33   [NODE:0, Locus: 7, Heating:ON (Swaps: 190)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.636357 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       3.84468   20.00000    0.937   326.54
+           Theta_2           1.000       8.18715   20.00000    0.874   671.80
+           M_1->2            1.000       3.15983   20.00000    0.892   572.58
+           Genealogies       1.000     -46.64606     ---       0.994    31.24
+09:32:33   4 chains: Temp(1,1.5,3,1e+06) Acc(0.46,0.55,0.69,1.00) Swap(190,135,0,0)
+09:32:33   Locus 8: Replicate 1
+09:32:33   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:32:34   Burn-in 33.0% complete
+09:32:34   Burn-in 66.0% complete
+09:32:35   Burn-in 99.0% complete
+09:32:35   Sampling ...
+
+09:32:43   [NODE:0, Locus: 8, Heating:ON (Swaps: 6)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.651509 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       8.60539   20.00000    0.817   335.20
+           Theta_2           1.000      12.55386   20.00000    0.601   829.79
+           M_1->2            1.000      16.78491   20.00000    0.880   213.23
+           Genealogies       1.000     -51.13475     ---       0.986    24.12
+
+09:32:46   [NODE:0, Locus: 8, Heating:ON (Swaps: 6)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.666660 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      10.91973   20.00000    0.865   482.61
+           Theta_2           1.000      10.11638   20.00000    0.571  1818.26
+           M_1->2            1.000      16.58549   20.00000    0.849   543.81
+           Genealogies       1.000     -67.63800     ---       0.989    37.70
+
+09:32:49   [NODE:0, Locus: 8, Heating:ON (Swaps: 101)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.681811 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      11.78920   20.00000    0.897   543.88
+           Theta_2           1.000      16.80066   20.00000    0.675  1937.92
+           M_1->2            1.000      11.71430   20.00000    0.826   954.08
+           Genealogies       1.000     -77.43360     ---       0.991    45.77
+09:32:49   4 chains: Temp(1,1.5,3,1e+06) Acc(0.36,0.50,0.64,0.99) Swap(101,71,0,0)
+09:32:49   Locus 8: Replicate 2
+09:32:49   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:32:49   Burn-in 33.0% complete
+09:32:50   Burn-in 66.0% complete
+09:32:51   Burn-in 99.0% complete
+09:32:51   Sampling ...
+
+09:32:59   [NODE:0, Locus: 8, Heating:ON (Swaps: 54)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.696963 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      13.50459   20.00000    0.794   382.85
+           Theta_2           1.000       5.78716   20.00000    0.646   714.99
+           M_1->2            1.000      16.64905   20.00000    0.632   750.60
+           Genealogies       1.000     -65.98689     ---       0.988    20.21
+
+09:33:02   [NODE:0, Locus: 8, Heating:ON (Swaps: 56)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.712114 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       7.21261   20.00000    0.906   329.74
+           Theta_2           1.000      11.07766   20.00000    0.649  1419.88
+           M_1->2            1.000      15.02244   20.00000    0.811   696.71
+           Genealogies       1.000     -52.14146     ---       0.993    24.21
+
+09:33:05   [NODE:0, Locus: 8, Heating:ON (Swaps: 58)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.727265 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       6.43517   20.00000    0.907   489.78
+           Theta_2           1.000      18.86151   20.00000    0.633  2245.37
+           M_1->2            1.000      16.48913   20.00000    0.777  1256.17
+           Genealogies       1.000     -64.21624     ---       0.992    39.03
+09:33:05   4 chains: Temp(1,1.5,3,1e+06) Acc(0.37,0.50,0.62,1.00) Swap(58,86,0,0)
+09:33:05   Locus 9: Replicate 1
+09:33:05   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:33:06   Burn-in 33.0% complete
+09:33:06   Burn-in 66.0% complete
+09:33:07   Burn-in 99.0% complete
+09:33:07   Sampling ...
+
+09:33:15   [NODE:0, Locus: 9, Heating:ON (Swaps: 34)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.742417 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       7.38819   20.00000    0.898   179.27
+           Theta_2           1.000       4.17253   20.00000    0.791   388.71
+           M_1->2            1.000       4.60487   20.00000    0.858   253.87
+           Genealogies       1.000     -58.29011     ---       0.992    13.99
+
+09:33:17   [NODE:0, Locus: 9, Heating:ON (Swaps: 38)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.757568 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       9.48989   20.00000    0.875   442.42
+           Theta_2           1.000       9.12730   20.00000    0.725  1064.36
+           M_1->2            1.000       8.94099   20.00000    0.937   218.24
+           Genealogies       1.000     -63.94398     ---       0.991    28.86
+
+09:33:20   [NODE:0, Locus: 9, Heating:ON (Swaps: 102)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.772720 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       7.38710   20.00000    0.890   582.59
+           Theta_2           1.000       9.32862   20.00000    0.669  1979.58
+           M_1->2            1.000      12.65356   20.00000    0.913   456.79
+           Genealogies       1.000     -53.14820     ---       0.992    42.24
+09:33:20   4 chains: Temp(1,1.5,3,1e+06) Acc(0.30,0.42,0.57,1.00) Swap(102,32,0,0)
+09:33:20   Locus 9: Replicate 2
+09:33:20   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:33:20   Burn-in 33.0% complete
+09:33:21   Burn-in 66.0% complete
+09:33:21   Burn-in 99.0% complete
+09:33:21   Sampling ...
+
+09:33:30   [NODE:0, Locus: 9, Heating:ON (Swaps: 46)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.787871 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      11.43815   20.00000    0.897   180.63
+           Theta_2           1.000      15.40481   20.00000    0.730   518.94
+           M_1->2            1.000       4.97530   20.00000    0.886   200.44
+           Genealogies       1.000     -74.00732     ---       0.993    12.44
+
+09:33:32   [NODE:0, Locus: 9, Heating:ON (Swaps: 270)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.803022 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      12.53848   20.00000    0.882   418.40
+           Theta_2           1.000       5.59761   20.00000    0.712  1122.76
+           M_1->2            1.000      12.12578   20.00000    0.859   503.72
+           Genealogies       1.000     -74.61051     ---       0.991    31.27
+
+09:33:35   [NODE:0, Locus: 9, Heating:ON (Swaps: 378)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.818174 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      19.06574   20.00000    0.852   797.54
+           Theta_2           1.000       4.28381   20.00000    0.721  1621.76
+           M_1->2            1.000       9.26115   20.00000    0.862   738.59
+           Genealogies       1.000     -78.65655     ---       0.990    49.26
+09:33:35   4 chains: Temp(1,1.5,3,1e+06) Acc(0.31,0.41,0.56,1.00) Swap(378,28,0,0)
+09:33:35   Locus 10: Replicate 1
+09:33:35   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:33:36   Burn-in 33.0% complete
+09:33:36   Burn-in 66.0% complete
+09:33:37   Burn-in 99.0% complete
+09:33:37   Sampling ...
+
+09:33:45   [NODE:0, Locus: 10, Heating:ON (Swaps: 158)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.833325 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      17.47116   20.00000    0.744   488.54
+           Theta_2           1.000       9.81100   20.00000    0.735   509.04
+           M_1->2            1.000       4.25397   20.00000    0.631   754.17
+           Genealogies       1.000     -82.27009     ---       0.990    17.43
+
+09:33:47   [NODE:0, Locus: 10, Heating:ON (Swaps: 160)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.848476 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      16.32027   20.00000    0.894   373.84
+           Theta_2           1.000      10.24860   20.00000    0.795   759.58
+           M_1->2            1.000       0.76142   20.00000    0.883   415.45
+           Genealogies       1.000     -88.30498     ---       0.988    39.90
+
+09:33:50   [NODE:0, Locus: 10, Heating:ON (Swaps: 253)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.863628 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      13.67624   20.00000    0.877   654.89
+           Theta_2           1.000      11.74653   20.00000    0.795  1138.83
+           M_1->2            1.000       4.04952   20.00000    0.883   622.29
+           Genealogies       1.000     -81.80237     ---       0.990    51.08
+09:33:50   4 chains: Temp(1,1.5,3,1e+06) Acc(0.28,0.40,0.55,1.00) Swap(253,46,0,0)
+09:33:50   Locus 10: Replicate 2
+09:33:50   Burn-in: 100000 steps are not used (samples * increment; trees and parameters)
+09:33:50   Burn-in 33.0% complete
+09:33:50   Burn-in 66.0% complete
+09:33:51   Burn-in 99.0% complete
+09:33:51   Sampling ...
+
+09:33:59   [NODE:0, Locus: 10, Heating:ON (Swaps: 16)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.878779 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      18.17383   20.00000    0.843   282.86
+           Theta_2           1.000      17.39235   20.00000    0.570   911.23
+           M_1->2            1.000       2.17162   20.00000    0.589   862.40
+           Genealogies       1.000     -97.76684     ---       0.987    21.65
+
+09:34:01   [NODE:0, Locus: 10, Heating:ON (Swaps: 18)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.893930 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000       7.83414   20.00000    0.866   478.73
+           Theta_2           1.000      17.37269   20.00000    0.672  1308.37
+           M_1->2            1.000       8.63203   20.00000    0.878   432.51
+           Genealogies       1.000     -65.64667     ---       0.990    31.81
+
+09:34:04   [NODE:0, Locus: 10, Heating:ON (Swaps: 191)] 
+           (prognosed end of run is 09:34 June 24 2016 [0.909082 done])
+
+           Parameter     Acceptance Current      PropWindow AutoCorr ESS
+           ------------  ---------- ------------ ---------- -------- --------
+           Theta_1           1.000      17.62490   20.00000    0.872   684.57
+           Theta_2           1.000       5.56222   20.00000    0.728  1572.38
+           M_1->2            1.000      12.02953   20.00000    0.911   465.77
+           Genealogies       1.000     -77.99332     ---       0.990    50.09
+09:34:04   4 chains: Temp(1,1.5,3,1e+06) Acc(0.27,0.39,0.53,1.00) Swap(191,9,0,0)
+0> BAYES OVER LOCI: locus=10, binsum=1500
+len(touched)=1521
+
+
+
+Acceptance ratios for all parameters and the genealogies
+---------------------------------------------------------------------
+
+Parameter           Accepted changes               Ratio
+Theta_1                 333439/333439            1.00000
+Theta_2                 332857/332857            1.00000
+M_1->2                  333206/333206            1.00000
+Genealogies             322871/1000498           0.32271
+
+MCMC run characteristics: Autocorrelation and Effective sample size
+-------------------------------------------------------------------
+
+  Parameter         Autocorrelation(*)   Effective Sample size
+  ---------         ---------------      ---------------------
+  Theta_1                0.86226             15351.49
+  Theta_2                0.74567             29830.89
+  M_1->2                 0.83610             18367.16
+  Ln[Prob(D|P)]          0.99170               834.42
+
+
+
+
+Log-Probability of the data given the model (marginal likelihood = log(P(D|thisModel))
+--------------------------------------------------------------------
+[Use this value for Bayes factor calculations:
+BF = Exp[log(P(D|thisModel) - log(P(D|otherModel)]
+shows the support for thisModel]
+
+
+
+Locus      Raw Thermodynamic score(1a)  Bezier approximated score(1b)     Harmonic mean(2)
+------------------------------------------------------------------------------------------
+      1              -3153.33                       -633.82                -124.61
+      2              -2095.58                       -430.09                 -91.78
+      3              -1057.85                       -268.77                 -97.98
+      4              -6844.32                      -1227.40                -113.36
+      5              -1310.13                       -282.61                 -55.84
+      6              -3619.48                       -685.63                 -90.04
+      7               -863.34                       -218.57                 -63.65
+      8              -1360.05                       -322.47                 -97.24
+      9              -1972.10                       -422.67                 -99.44
+     10              -3911.44                       -748.31                -104.36
+---------------------------------------------------------------------------------------
+  All               -26191.33                      -5244.03                -942.00
+[Scaling factor = -3.698491]
+
+POTENTIAL PROBLEMS
+------------------------------------------------------------------------------------------
+This section reports potential problems with your run, but such reporting is often not 
+very accurate. Whith many parameters in a multilocus analysis, it is very common that 
+some parameters for some loci will not be very informative, triggering suggestions (for 
+example to increase the prior range) that are not sensible. This suggestion tool will 
+improve with time, therefore do not blindly follow its suggestions. If some parameters 
+are flagged, inspect the tables carefully and judge wether an action is required. For 
+example, if you run a Bayesian inference with sequence data, for macroscopic species 
+there is rarely the need to increase the prior for Theta beyond 0.1; but if you use 
+microsatellites it is rather common that your prior distribution for Theta should have a 
+range from 0.0 to 100 or more. With many populations (>3) it is also very common that 
+some migration routes are estimated poorly because the data contains little or no 
+information for that route. Increasing the range will not help in such situations, 
+reducing number of parameters may help in such situations.
+------------------------------------------------------------------------------------------
+Param 1 (Locus 4): Upper prior boundary seems too low! 
+Param 4 (Locus 5): Upper prior boundary seems too low! 
+Param 4 (Locus 8): Upper prior boundary seems too low! 
+Param 4 (all loci): Upper prior boundary seems too low! 
+------------------------------------------------------------------------------------------
+09:34:04   Program finished
