@@ -1,8 +1,3 @@
-mpi+paralio using 8 nodes
-real	0m35.829s
-user	0m48.005s
-sys	0m6.745s
-using mpi
-real  0m35.905s
-user  0m48.342s
-sys   0m5.921s
+version https://git-lfs.github.com/spec/v1
+oid sha256:3831e8f642d091094388c2b6321d08763f74caddd8519098d914c762b46572a3
+size 126

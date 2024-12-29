@@ -1,2 +1,3 @@
-time mpirun -np 3 ../migrate-n parmfile.testml -nomenu > ml.log
-time mpirun -np 3 ../migrate-n parmfile.testbayes -nomenu > bi.log
+version https://git-lfs.github.com/spec/v1
+oid sha256:cffe0784e24ddf3772b7d50c0dd206808eba9248a558d7d983888ef7d55d54b7
+size 131
