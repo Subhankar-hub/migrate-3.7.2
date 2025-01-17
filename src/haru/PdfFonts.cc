@@ -139,7 +139,7 @@ PdfType1Font::SetAttributes(const char* name, PdfType1FontDef* fontdef,
         PdfEncodingDef* encoding)
 {
     assert(fValid == false);
-    assert(fontdef != false);
+    assert(fontdef != nullptr);
     
     fFontDef = fontdef;
     fEncoding = encoding;
