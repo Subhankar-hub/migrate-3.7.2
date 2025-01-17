@@ -18,6 +18,7 @@
 #include <stdio.h>
 #include <errno.h>
 #include "libharu.h"
+#include "PdfPngImage.h"
 
 void pdf_png_read_data(png_structp png_ptr, png_bytep data, png_uint_32 length);
 

@@ -15,6 +15,7 @@
 #include "libharu.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include "PdfLList.h"
 
 /*----- PdfLNode class --------------------------------------------------------*/
 
