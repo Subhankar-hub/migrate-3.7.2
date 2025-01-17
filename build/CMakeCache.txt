@@ -216,13 +216,13 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-migrate_BINARY_DIR:STATIC=/home/smith/CLionProjects/migrate-3.7.2/build/src/zlib
+migrate_BINARY_DIR:STATIC=/home/smith/CLionProjects/migrate-3.7.2/build
 
 //Value Computed by CMake
-migrate_IS_TOP_LEVEL:STATIC=OFF
+migrate_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-migrate_SOURCE_DIR:STATIC=/home/smith/CLionProjects/migrate-3.7.2/src/zlib
+migrate_SOURCE_DIR:STATIC=/home/smith/CLionProjects/migrate-3.7.2
 
 //Dependencies for the target
 migrate_lib_LIB_DEPENDS:STATIC=general;zlib;general;haru;

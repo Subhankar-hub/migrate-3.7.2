@@ -1,5 +1,5 @@
 /*
- * << H a r u --free pdf library >> -- PdfCIDFontDef.cpp
+* << H a r u --free pdf library >> -- PdfCIDFontDef.cpp
  *
  * Copyright (c) 1999-2003 Takeshi Kanno <takeshi_kanno@est.hi-ho.ne.jp>
  *
@@ -15,7 +15,7 @@
 #include <assert.h>
 #include <errno.h>
 #include "libharu.h"
-
+#include "PdfCIDWItem.h"
 /*----- PdfCIDWItem class ----------------------------------------------------*/
 
 PdfCIDWItem::~PdfCidWItem()
@@ -26,7 +26,7 @@ PdfCIDWItem::~PdfCidWItem()
 /*----------------------------------------------------------------------------*/
 /*----- PdfCidWItem1 class ---------------------------------------------------*/
 
-PdfCidWItem1::PdfCidWItem1(unsigned int from, unsigned int to, 
+PdfCidWItem1::PdfCidWItem1(unsigned int from, unsigned int to,
         unsigned int value)
 {
     PDF_DEBUG_PRINT(("++ [%x] PdfCidWItem1 new. \n", (int)this));
@@ -38,7 +38,7 @@ PdfCidWItem1::PdfCidWItem1(unsigned int from, unsigned int to,
 /*----------------------------------------------------------------------------*/
 /*----- PdfCidWItem2 class ---------------------------------------------------*/
 
-PdfCidWItem2::PdfCidWItem2(unsigned int from, unsigned int count, 
+PdfCidWItem2::PdfCidWItem2(unsigned int from, unsigned int count,
         unsigned int* values)
 {
     PDF_DEBUG_PRINT(("++ [%x] PdfCidWItem2 new. \n", (int)this));
