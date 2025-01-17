@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/migrate.dir/src/main.c.o -o migrate  src/zlib/libzlib.a src/haru/libharu.a 
