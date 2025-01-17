@@ -16,11 +16,12 @@
 #include <errno.h>
 #include "libharu.h"
 #include "PdfCIDWItem.h"
+
 /*----- PdfCIDWItem class ----------------------------------------------------*/
 
-PdfCIDWItem::~PdfCidWItem()
+PdfCIDWItem::~PdfCIDWItem()
 {
-    PDF_DEBUG_PRINT(("++ [%x] PdfCidWItem delete. \n", (int)this));
+    PDF_DEBUG_PRINT(("++ [%x] PdfCIDWItem delete. \n", (int)this));
 }
 
 /*----------------------------------------------------------------------------*/
@@ -50,9 +51,8 @@ PdfCidWItem2::PdfCidWItem2(unsigned int from, unsigned int count,
     memcpy(fWidths, values, sizeof(unsigned int) * count);
 }
 
-PdfCidWItem2::~PdfCidWItem()
+PdfCidWItem2::~PdfCidWItem2()
 {
     PDF_DEBUG_PRINT(("++ [%x] PdfCidWItem::fWidths delete. \n", (int)this));
-    delete fWidths();
+    delete[] fWidths; // Corrected delete syntax
 }
-
