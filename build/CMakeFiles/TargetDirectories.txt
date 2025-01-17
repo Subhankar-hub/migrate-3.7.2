@@ -1,0 +1,12 @@
+/home/smith/CLionProjects/migrate-3.7.2/build/CMakeFiles/migrate.dir
+/home/smith/CLionProjects/migrate-3.7.2/build/CMakeFiles/edit_cache.dir
+/home/smith/CLionProjects/migrate-3.7.2/build/CMakeFiles/rebuild_cache.dir
+/home/smith/CLionProjects/migrate-3.7.2/build/src/CMakeFiles/migrate_lib.dir
+/home/smith/CLionProjects/migrate-3.7.2/build/src/CMakeFiles/edit_cache.dir
+/home/smith/CLionProjects/migrate-3.7.2/build/src/CMakeFiles/rebuild_cache.dir
+/home/smith/CLionProjects/migrate-3.7.2/build/src/haru/CMakeFiles/haru.dir
+/home/smith/CLionProjects/migrate-3.7.2/build/src/haru/CMakeFiles/edit_cache.dir
+/home/smith/CLionProjects/migrate-3.7.2/build/src/haru/CMakeFiles/rebuild_cache.dir
+/home/smith/CLionProjects/migrate-3.7.2/build/src/zlib/CMakeFiles/zlib.dir
+/home/smith/CLionProjects/migrate-3.7.2/build/src/zlib/CMakeFiles/edit_cache.dir
+/home/smith/CLionProjects/migrate-3.7.2/build/src/zlib/CMakeFiles/rebuild_cache.dir
